@@ -453,15 +453,13 @@ img {
   border: 1px solid #AFB1B8;
   border-radius: 4px;
   fill: var(--icon-clients);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--anim-slow), fill var(--anim-slow);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--accent-txt-cl);
   border: 1px solid #2196F3;
-  border-radius: 4px;
 }
 
 /* footer */
@@ -495,8 +493,7 @@ img {
 .address-item {
   font-style: normal;
   color: var(--light-txt-cl);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim-slow);
 }
 
 .logo-second-alt-part {
@@ -513,8 +510,7 @@ img {
 .address-link {
   font-style: normal;
   color: var(--light-txt-cl-60);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--anim-slow);
 }
 
 .footer-section .link:hover,
@@ -545,8 +541,7 @@ img {
   height: 44px;
   background-color: var(--footer-icon-bg-cl);
   border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-slow);
 }
 
 .footer-socials-link:hover,
@@ -593,8 +588,7 @@ img {
   color: var(--main-txt-cl);
   background-color: var(--btn-filter-bg-cl);
   cursor: pointer;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim-slow), color var(--anim-slow), box-shadow var(--anim-slow);
 }
 
 .portfolio-button:hover,
@@ -626,6 +620,7 @@ img {
 
 .project-link {
   display: block;
+  transition: box-shadow var(--anim-slow);
 }
 
 .project-link:hover,
@@ -655,8 +650,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--anim-slow);
 }
 
 .overlay-description {
@@ -689,12 +683,15 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity var(--anim-slow);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition: opacity var(--anim-slow);
 }
 
 .modal {
@@ -722,6 +719,7 @@ img {
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
+  background-color: transparent;
 }
 
 
