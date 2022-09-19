@@ -399,7 +399,6 @@ img {
 
 .socials-link:hover .socials-icon,
 .socials-link:focus .socials-icon {
-  background-color: var(--accent-txt-cl);
   fill: var(--light-txt-cl);
 }
 
@@ -518,6 +517,10 @@ img {
   color: var(--accent-txt-cl);
 }
 
+.footer-socials-container {
+  margin-right: 50px;
+}
+
 .footer-socials-title {
   font-weight: 700;
   font-size: 14px;
@@ -557,6 +560,45 @@ img {
 .footer-socials-link:focus .socials-icon {
   background-color: var(--accent-txt-cl);
   fill: var(--light-txt-cl);
+}
+
+.footer-form-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: var(--light-txt-cl);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 216px;
+  min-height: 50px;
+  padding: 6px 28px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);
+  background-color: var(--btn-hero-cl);
+  cursor: pointer;
+  transition: background-color var(--anim-slow);
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  background-color: var(--bnt-act-cl);
+}
+
+.footer-button:active {
+  background-color: var(--bnt-act-cl);
 }
 
 /* portfolio */
@@ -706,7 +748,7 @@ img {
   border-radius: 4px;
 }
 
-.modal-button {
+.modal-button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -720,9 +762,49 @@ img {
   border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
+  transition: fill var(--anim-slow);
 }
 
+.modal-button-close:hover,
+.modal-button-close:focus {
+  fill: var(--btn-hero-cl);
+}
 
+.user-comment {
+  /* width: 440px;
+  height: 120px; */
+  resize: none;
+}
+
+.modal-button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 216px;
+  min-height: 50px;
+  padding: 6px 28px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  color: var(--light-txt-cl);
+  background-color: var(--btn-hero-cl);
+  cursor: pointer;
+  transition: background-color var(--anim-slow);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--bnt-act-cl);
+}
+
+.modal-button:active {
+  background-color: var(--bnt-act-cl);
+}
 
 /* фон fff */
 /* основной цвет текста #212121 */
