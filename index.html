@@ -583,30 +583,45 @@
         </button>
         <form name="feedback-form">
           <strong class="feedback-form-title">Залиште свої дані, ми вам передзвонимо</strong>
-          <div>
-            <label>
-              <span>Ім'я</span>
-              <input type="text" name="User-name" required />
+          <div class="feedback-form-group" role="group">
+            <label class="feedback-form-field">
+              <span class="feedback-form-label">Ім'я</span>
+              <input class="feedback-form-input" type="text" name="User-name" required />
+              <svg class="feedback-form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-modal-user"></use>
+              </svg>
             </label>
-          </div>
-          <div>
-            <label>
+            <label class="feedback-form-field">
               <span>Телефон</span>
-              <input type="tel" name="User-phone" required />
+              <input class="feedback-form-input" type="tel" name="User-phone" required />
+              <svg class="feedback-form-icon" width="13" height="13">
+                <use href=""></use>
+              </svg>
             </label>
-          </div>
-          <div>
-            <label>
+            <label class="feedback-form-field">
               <span>Пошта</span>
-              <input type="email" name="User-mail" required />
+              <input class="feedback-form-input" type="email" name="User-mail" required />
+              <svg class="feedback-form-icon" width="15" height="12">
+                <use href=""></use>
+              </svg>
             </label>
-          </div>
-          <div>
-            <label>
+            <label class="feedback-form-field">
               <span>Коментар</span>
-              <textarea class="user-comment" name="User-comment" id="" rows="10"></textarea>
+              <textarea
+                class="feedback-user-comment"
+                name="User-comment"
+                rows="10"
+                placeholder="Введіть текст"
+              ></textarea>
             </label>
           </div>
+          <label class="feedback-form-agreement">
+            <input class="feedback-form-checkbox" type="checkbox" name="" />
+            <span class="feedback-form-description"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="feedback-form-link" href="">Умови договору</a>
+            </span>
+          </label>
           <button class="modal-button" type="submit">Відправити</button>
         </form>
       </div>
