@@ -67,7 +67,7 @@
     <symbol id="icon-modal-checked" viewBox="0 0 32 32">
       <path stroke-width=".492" d="m4.817 15.389-.169-.162-2.544 2.41 8.962 8.55L29.895 8.225l-2.527-2.411L11.066 21.35l-6.249-5.962z"/>
     </symbol>
-    <symbol id="icon-modal-nochecked" viewBox="0 0 32 32">
+    <symbol id="icon-modal-unchecked" viewBox="0 0 32 32">
       <path d="M28.444 4.333v23.333H3.555V4.333h24.889zm0-3.333H3.555C1.599 1-.001 2.5-.001 4.333v23.333c0 1.833 1.6 3.333 3.556 3.333h24.889c1.956 0 3.556-1.5 3.556-3.333V4.333C32 2.5 30.4 1 28.444 1z"/>
     </symbol>
     <symbol id="icon-telegram" viewBox="0 0 32 32">
