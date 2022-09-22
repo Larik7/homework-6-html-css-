@@ -518,7 +518,7 @@ img {
 }
 
 .footer-socials-container {
-  margin-right: 50px;
+  margin-right: 90px;
 }
 
 .footer-socials-title {
@@ -562,6 +562,11 @@ img {
   fill: var(--light-txt-cl);
 }
 
+.footer-mailing-container {
+  display: flex;
+  gap: 12px;
+}
+
 .footer-form-title {
   font-weight: 700;
   font-size: 14px;
@@ -571,10 +576,25 @@ img {
   margin-bottom: 20px;
 }
 
+.footer-form-input {
+  width: 360px;
+  height: 50px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-button {
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   width: 216px;
   min-height: 50px;
   padding: 6px 28px;
@@ -599,6 +619,10 @@ img {
 
 .footer-button:active {
   background-color: var(--bnt-act-cl);
+}
+
+.footer-form-icon {
+  fill: var(--light-txt-cl)
 }
 
 /* portfolio */
@@ -830,6 +854,7 @@ img {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: var(--second-txt-cl);
+  margin-bottom: 4px;
 }
 
 .feedback-form-input {
@@ -849,7 +874,7 @@ img {
 
 .feedback-form-icon {
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 15px;
   transition: fill var(--anim-slow);
 }
@@ -867,9 +892,10 @@ img {
 }
 
 .feedback-user-comment {
+  display: block;
   width: 100%;
   height: 120px;
-  padding: 12px, 16px;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
@@ -880,16 +906,46 @@ img {
   border-color: var(--accent-txt-cl);
 }
 
-.feedback-form-description {
-  color: var(--second-txt-cl);
+.feedback-user-comment::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
-.feedback-form-checkbox {
+.feedback-form-checkbox:checked + .feedback-checkbox-icon .icon-checked {
+  opacity: 1;
+}
 
+.icon-checked {
+  opacity: 0;
+  transition: opacity var(--anim-slow);
+}
+
+.feedback-form-checkbox:checked+.feedback-checkbox-icon .icon-unchecked {
+  opacity: 0;
+}
+
+.icon-unchecked {
+  fill: var(--main-txt-cl);
+  opacity: 1;
+  transition: opacity var(--anim-slow);
+}
+
+.feedback-form-description {
+  color: var(--second-txt-cl);
+  user-select: none;
+}
+
+.feedback-form-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 .feedback-checkbox-icon {
   position: absolute;
   top: 5px;
-  left: 25px;
+  left: 10px;
 }
